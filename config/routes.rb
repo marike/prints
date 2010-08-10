@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :books
+
   map.resources :prints
   #map.resources :site
 

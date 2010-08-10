@@ -1,0 +1,28 @@
+<h1>Listing books</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Path</th>
+    <th>Thumbnail</th>
+    <th>Height</th>
+    <th>Width</th>
+  </tr>
+
+<% @books.each do |book| %>
+  <tr>
+    <td><%=h book.title %></td>
+    <td><%=h book.path %></td>
+    <td><%=h book.thumbnail %></td>
+    <td><%=h book.height %></td>
+    <td><%=h book.width %></td>
+    <td><%= link_to 'Show', book %></td>
+    <td><%= link_to 'Edit', edit_book_path(book) %></td>
+    <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New book', new_book_path %>

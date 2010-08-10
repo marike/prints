@@ -2236,3 +2236,112 @@ The error occurred while evaluating nil.downcase) on line #33 of app/views/layou
 Rendered rescues/_trace (40.5ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (89.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (236.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20100810135438)
+  [4;35;1mSQL (114.7ms)[0m   [0mCREATE TABLE `books` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `path` varchar(255), `thumbnail` varchar(255), `height` int(11), `width` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100810135438')[0m
+Migrating to CreateLargeBooks (20100810135456)
+  [4;35;1mSQL (117.9ms)[0m   [0mCREATE TABLE `large_books` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `path` varchar(255), `book_id` int(11), `height` int(11), `width` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100810135456')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `books`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `books`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `books`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `contacts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `contacts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `large_books`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `large_books`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `large_books`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `large_prints`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `large_prints`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `large_prints`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `prints`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `prints`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:17) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mPrint Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (0.5ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (0.5ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 11) [0m
+Completed in 21ms (View: 11, DB: 6) | 200 OK [http://localhost/prints/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:19) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPrint Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (0.9ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 12) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (0.3ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 12) [0m
+Completed in 18ms (View: 8, DB: 5) | 200 OK [http://localhost/prints/12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:24) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mPrint Columns (97.1ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (0.8ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 13) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (14.7ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (11.4ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 13) [0m
+Completed in 138ms (View: 8, DB: 124) | 200 OK [http://localhost/prints/13]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:28) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mPrint Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (5.5ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 14) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (6.6ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (9.8ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 14) [0m
+Completed in 41ms (View: 9, DB: 28) | 200 OK [http://localhost/prints/14]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:29) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mPrint Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (0.3ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 15) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (0.5ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 15) [0m
+Completed in 18ms (View: 8, DB: 5) | 200 OK [http://localhost/prints/15]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrintsController#show (for 127.0.0.1 at 2010-08-10 11:55:32) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mPrint Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `prints`[0m
+  [4;35;1mPrint Load (0.9ms)[0m   [0mSELECT * FROM `prints` WHERE (`prints`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering prints/show
+  [4;36;1mLargePrint Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `large_prints`[0m
+  [4;35;1mLargePrint Load (0.3ms)[0m   [0mSELECT * FROM `large_prints` WHERE (`large_prints`.`id` = 16) [0m
+Completed in 19ms (View: 8, DB: 5) | 200 OK [http://localhost/prints/16]
