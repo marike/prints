@@ -1,0 +1,751 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+blockquote {margin:0; padding: 0;}
+
+body { background-color: #fff; color: #333; 
+background: url('../images/gradient_light.jpg') repeat; 
+height: 100%;
+
+}
+
+html, body {
+height: 100%;	
+}
+
+
+
+body, p, ol, ul, td {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size:   13px;
+line-height: 18px;
+}
+
+pre {
+background-color: #eee;
+padding: 10px;
+font-size: 11px;
+}
+
+
+#logo {
+font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+ font-size: 40px;
+ margin-left: 40px;
+color: #CC0200;
+margin-top:0px;
+}
+
+h2 {
+font: 1.4em Arial, Helvetica, sans-serif;
+color: #666;
+text-align:left;
+margin-left:0px;
+margin-bottom:-1px;
+letter-spacing: .2em;
+margin-left: 40px;
+
+}
+
+
+#page-wrap {
+min-height: 100%;
+background: white;
+width: 1180px;
+margin: 10px auto;	
+}
+* html #page-wrap {
+height: 100%;
+}
+
+#page-wrap #inside {
+margin: 5px 10px 0px 10px;
+padding-top: 5px;
+padding-bottom: 10px;	
+}
+
+#main-content {
+padding-left: 0px;
+padding-top: 20px;
+}
+
+#header {
+text-align: left;
+}
+
+.flash {
+color: #032050; margin-top: 50px; margin-left: 40px;
+}
+
+#footer {
+background: #333;
+position:relative;
+text-align: center;
+ margin-left: 40px;
+ margin-bottom: 0px;
+ padding-top: 8%;
+color: #eee;
+font-family: verdana, arial, sans-serif;
+}
+
+#footer p {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+
+
+
+#footer a:hover {
+text-decoration: underline;
+color: #666;
+}
+
+.dropcap {
+color:#CC0200;
+font-size:70px;
+line-height:90%;
+padding-top:0px;
+padding-right:3px;
+font-family: Arial, sans-serif;
+}
+
+#quotation {
+font-family: verdana, helvetica, sans-serif;
+font-size: 11px;
+margin-top: 70px;
+margin-left: 60px;
+width:240px;
+text-align:justify;
+padding: 10px 0 0px 0;
+}
+
+
+/*  Artist Statement */
+
+.states {
+	margin-top: 35px;
+	margin-left: 40px;
+	float: left;
+	font-weight: bold;
+	color: #333;
+}
+
+.states a {
+	color: #333;
+	text-decoration:none;
+}
+
+.states a:hover {
+	text-decoration: underline;
+	color: #CC0200;
+}
+
+.design_states {
+	margin-top: 65px;
+	margin-left: 40px;
+	float: left;
+	font-weight: bold;
+	color: #333;
+}
+
+.design_states a {
+	color: #333;
+	text-decoration:none;
+}
+
+.design_states a:hover {
+	text-decoration: underline;
+	color: #CC0200;
+}
+/*
+.states {
+margin-top: 65px;
+margin-left: 40px;
+float: left;
+font-weight: bold;
+color: #333;
+line-height: 180%;
+
+
+}
+
+.states a {
+color: #333;
+text-decoration:none;
+
+}
+
+.states a:hover {
+text-decoration: underline;
+color: #CC0200;
+}*/
+.art_state {
+/*display:inline; */
+margin-top: 50px; 
+margin-left:240px;
+
+margin-right: 80px;
+/*width:860px; */
+line-height: 190%;
+font-family: Verdana, serif;
+text-align:justify;
+
+ 
+}
+
+.art_state2 {
+
+margin-left:240px;
+margin-right: 80px;
+text-align:justify;
+line-height: 190%;
+font-family: Verdana, serif;
+
+}
+
+.totop {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.img-shadow img {
+
+float:right;
+padding-left: 20px;
+margin: 85px 70px 0 10px !important;
+margin: 85px 70px 0 5px;
+clear:right;
+
+}
+
+.spacer {
+clear:right;
+}
+
+.top {
+clear:both; 	
+}
+#footer {
+font-family: verdana, arial, sans-serif;
+text-decoration: none;
+color: #fff;
+
+
+}
+
+/* End Artist Statement */
+
+/* Beginning Prints */
+
+#next {
+float:right;
+margin-right: 117px;
+padding-top: 10px;
+font-size: 12px;
+font-family: Arial, Verdana, sans-serif;
+color :#fff;
+clear:left;
+}
+
+#next a {
+float:right;
+margin-right: 2px;
+ color: #fff;
+font-size: 12px;
+display:block;
+background: #75747A;
+padding:3px 6px 3px 6px;
+border: 2px solid #ccc;
+clear:left;
+}
+
+#next a:hover {
+background: #CC0200;
+}
+
+.title {
+width:150px;
+line-height: 200%;
+
+}
+
+.enlarge a {
+position:relative;
+margin-right: 20px;
+margin-left:995px;
+top: 360px;
+background: #CC0200;
+color: #fff;
+font-size: 12px;
+padding:3px 6px 3px 6px;
+font-family: Arial, sans-serif ;
+border: 2px solid #ccc;
+}
+
+#numbering {
+ text-align:right;
+margin-top: 0px;
+padding-bottom: 30px;
+margin-right: 112px;
+font-size: 12px;
+font-family: Arial, sans-serif ;
+color: #999;
+}
+
+#image_display {
+margin-right: 200px;
+margin-left: 260px;
+margin-top: -40px;
+}
+
+.clearfix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+
+/* Etching Details */
+
+#image_data {
+float:left;
+margin-top: -40px;
+margin-left: 40px;
+clear:left;
+
+}
+#image_data p {
+line-height: 150%;
+color: #333;
+font-size: 13px;
+}
+
+#image_data {
+line-height:100%;
+color: #333;
+font-size: 13px;
+}
+
+#image_data #size  {
+line-height: 100%;
+color: #333;
+font-size: 11px;
+clear:right;
+}
+#image_data h3 {
+
+font-family: Arial, sans-serif;
+font-weight: bold;
+color: #333;
+font-size: 16px;
+}
+
+#skinny {
+width: 100px;
+ font-size: 12px;
+ margin-left: 0px;
+ font-family: Arial, sans-serif;
+line-height: 170%;
+font-weight: bold;
+color: #333;
+
+}
+/* End Prints */
+
+/* BOOKS */
+
+#book_data {
+float:left;
+margin-top: 40px;
+margin-left: 40px;
+clear:left;
+
+}
+
+#book_data h3 {
+
+font-family: Arial, sans-serif;
+font-weight: bold;
+color: #333;
+font-size: 16px;
+
+}
+
+#book_data p {
+line-height: 150%;
+color: #333;
+font-size: 13px;
+padding-bottom: 10px;
+}
+
+#book_state {
+margin-top: 145px;
+padding-bottom:35px;
+margin-left:46px;
+width:660px;
+line-height: 190%;
+}
+
+.enlarge_book a {
+position:relative;
+margin-right: 30px;
+margin-left:862px;
+top: 430px;
+background: #CC0200;
+color: #fff;
+font-size: 12px;
+padding:3px 6px 3px 6px;
+font-family: Arial, sans-serif ;
+border: 2px solid #ccc;
+}
+
+
+.book_display{
+
+float:left;
+padding-left: 20px;
+margin: 40px 70px 0 200px !important;
+ margin: 40px 70px 0 195px;
+
+}
+
+/* End BOOKS */
+
+
+
+#navcontainer ul
+{
+padding-left: 0;
+margin-left: 40px;
+margin-right:0px;
+padding-right:0px;
+background-color: #75747A;
+color: #fff;
+float: left;
+width: 1128px;
+font-family: arial, helvetica, sans-serif;
+letter-spacing: .45em;
+border-left: 2px solid #ccc;
+border-top: 2px solid #ccc;
+border-bottom: 2px solid #ccc;
+
+}
+
+#navcontainer ul li { display: inline; }
+
+
+#navcontainer ul li a
+{
+padding: 0.2em 3.5em;	
+background-color: #75747A;
+color: White;
+text-decoration: none;
+float: left;
+border-right: 1px solid #fff;
+}
+
+
+#navcontainer ul li.last a {
+
+padding: 0.2em 3.5em;	
+background-color: #75747A;
+color: White;
+text-decoration: none;
+float: left;
+border-right: 0px solid #fff;
+
+}
+
+#navlist ul li a
+{
+padding: 0.2em 1em;
+background-color: #ccc;
+color: White;
+text-decoration: none;
+float: left;
+border-right: 1px solid #fff;
+}
+
+
+#navcontainer ul li a:hover
+{
+background: #CC0200;
+color: #fff;
+}
+
+#home #nav-home a,
+#statement #nav-statement a,
+#prints #nav-prints a,
+#books #nav-books a,
+#resume #nav-resume a,
+#contact #nav-contact a {
+color: #fff;
+background: #CC0200;
+}
+
+
+
+#home #nav-home a:hover,
+#statement #nav-statement a:hover,
+#prints #nav-prints a:hover,
+#books #nav-books a:hover,
+#resume #nav-resume a:hover,
+#contact #nav-contact a:hover {
+ color: #fff;
+ background: #CC0200;
+}
+
+
+
+#quote {
+float:left;
+font-family: Verdana, sans-serif;
+width:140px;
+margin-top: 150px;
+font-size: 10px;
+display: block;
+background: #ccc;
+padding: 2px;
+color: #333;
+}
+
+/* Resume */
+
+#portrait {
+ float: left;
+ clear: both;
+margin-top: 30px;
+margin-left: 40px;
+}
+
+
+/* Resume */
+
+#line {
+float:left;
+clear: right;
+margin-left: 50px;
+padding-right: 40px;
+
+}
+
+
+#clients h3{	
+font-family: Arial, sans-serif ;
+font-weight: bold;
+color: #333;
+font-size: 14px;
+margin-left: 50px;
+padding-bottom: 10px;
+
+}
+
+#clients p {
+
+font-family: Arial, sans-serif ;
+font-weight: bold;
+color: #333;
+font-size: 12px;
+margin-left: 50px;
+padding-bottom: 10px;
+
+}
+
+#clients {
+float: left;
+font-size: 8px;
+clear:left;
+padding-top: 0px;
+margin-left: 0px;
+line-height: 170%;
+
+
+}
+
+#clients ul li {
+font-weight: bold;
+color: #333;
+font-size: 10px;
+text-decoration:none;
+list-style:none;
+margin-left: 50px;
+clear:right;
+line-height: 220%;
+
+}
+
+#resume_section {
+
+margin-left: 290px;
+margin-top: 34px; 
+
+}
+
+#resume_section p {
+font-weight: bold;
+font-family: Arial, Verdana, sans-serif;
+
+}
+
+#resume_header {
+margin-top: 60px;
+ margin-left: 20px;
+font-family: Arial, sans-serif;
+font-weight: bold;
+color: #333;
+font-size: 14px;
+padding-bottom: 10px;
+
+}
+.resume  {
+font-family: Arial, Verdana, sans-serif;
+line-height: 250%;
+}
+
+
+.resume .indent {
+	margin-left: 80px;
+}
+
+.resume .head {
+font-size: 12px;
+font-weight:bold;
+}
+
+.resume dl dd {
+margin-left: 50px;
+list-style:none;
+/*line-height: 250%; */
+font-size:12px;
+}
+
+/* End Resume */
+
+/*---------------- CONTACT FORM -----------*/
+.email {
+margin-top: 40px;
+margin-left: 40px;
+padding-bottom: 20px;
+}
+.email a {
+text-decoration:none;
+color: #CC0000;
+}
+
+.email a:hover {
+text-decoration:underline;
+color: #CC0000;
+}
+fieldset {
+margin-top: 0px;
+margin-left: 40px;
+width:700px;
+padding-bottom: 20px;
+padding-top: 20px; 
+background: #C9C2CA;	
+position: relative;
+margin: 0 0 1em 40px;
+
+}
+
+legend {
+position: absolute;
+ top: -.8em;
+ left: .2em;
+font-size: 1.4em;
+font-family: Verdana, Arial ;
+background: #18181A;
+color: #fff;
+margin-left:5px;
+padding: 5px;
+}
+
+label {
+margin-left: 10px;
+font-size: 1.1em;
+margin-bottom:10px;
+}
+
+input, textarea {
+margin-left: 20px;
+margin-top: 5px;
+font-size:1.3em;
+
+}
+
+#button {
+margin-top: 5px;
+margin-left: 40px;
+padding-top: 5px;
+}
+/*---------------- end CONTACT -----------*/
+
+
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+padding: 2px;
+background-color: red;
+display: table;
+}
+
+#errorExplanation {
+width: 400px;
+border: 2px solid red;
+padding: 7px;
+padding-bottom: 12px;
+margin-bottom: 20px;
+background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+text-align: left;
+font-weight: bold;
+padding: 5px 5px 5px 15px;
+font-size: 12px;
+margin: -7px;
+background-color: #c00;
+color: #fff;
+}
+
+#errorExplanation p {
+color: #333;
+margin-bottom: 0;
+padding: 5px;
+}
+
+#errorExplanation ul li {
+font-size: 12px;
+list-style: square;
+}
+
+div.uploadStatus {
+margin: 5px;
+}
+
+div.progressBar {
+margin: 5px;
+}
+
+div.progressBar div.border {
+background-color: #fff;
+border: 1px solid gray;
+width: 100%;
+}
+
+div.progressBar div.background {
+background-color: #333;
+height: 18px;
+width: 0%;
+}
+

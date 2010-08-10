@@ -1,0 +1,41 @@
+<div id="numbering">
+  [<%= @print.id %> of 30]
+
+</div>
+
+<div id="next">
+	<%= link_to_unless(@print.id.eql?(30), "Next", "#{prints_path}/#{@print.id + 1}") %> 
+<%= link_to_unless(@print.id.eql?(1),  "Prev", "#{prints_path}/#{@print.id - 1}") %>
+
+
+</div>
+
+<% @large_print = LargePrint.find(params[:id]) %>
+
+<div class="enlarge">
+		<a href="<%= @large_print.path %>" rel="lytebox[gallery]" title="<%= @print.title %>">Enlarge</a>
+</div>		
+
+<div id="image_data">
+<h3>
+  <%=h (@print.group).upcase %>
+</h3><br />
+<p class="title">
+  <b><%=h @print.title %></b>
+</p>
+<blockquote id="skinny">
+	<%=h @print.process %>
+</blockquote><br />
+<p id="size">
+	<%=h @print.dimensions %>
+</p>
+
+
+</div>
+
+<div id="image_display">
+
+		<%= image_tag(@print.path, :width => @print.width, :height => @print.height, :alt => @print.group )%>
+
+
+</div>

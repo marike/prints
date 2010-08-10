@@ -1,0 +1,55 @@
+<h1>Editing print</h1>
+
+<%= error_messages_for :print %>
+
+<% form_for(@print) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Path</b><br />
+    <%= f.text_field :path %>
+  </p>
+
+  <p>
+    <b>Thumbnail</b><br />
+    <%= f.text_field :thumbnail %>
+  </p>
+
+  <p>
+    <b>Height</b><br />
+    <%= f.text_field :height %>
+  </p>
+
+  <p>
+    <b>Width</b><br />
+    <%= f.text_field :width %>
+  </p>
+
+  <p>
+	<b>Process</b><br />
+	<%= f.text_field :process %>
+  </p>
+
+
+  <p>
+	<b>Dimensions</b><br />
+	<%= f.text_field :dimensions %>
+  </p>
+
+	
+
+  <p>
+    <b>Group</b><br />
+    <%= f.text_field :group %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @print %> |
+<%= link_to 'Back', prints_path %>

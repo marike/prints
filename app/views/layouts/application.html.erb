@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Printmaking by Joan O'Connor" />
+	<meta name="verify-v1" content="IA3bMvzGJBpPfcZGvHXs6vqXto7Z4QkTeosx7XMlC6I=" />
+	<meta name="keywords" content="printmaking, etchings, art, art students, editioned printing, fine art, 
+	graphic arts, graphic design, book covers, how to, intaglio, gallery, aquatints, monoprint, platemaking, come and see my etchings, 
+	prints gallery, american graphic artist" />
+    <title>Joan O'Connor Printmaker/Designer - <%= @title %></title>
+
+	<script src="/javascripts/lytebox.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/javascripts/smooth.pack.js" type="text/javascript" charset="utf-8"></script>
+	                                                                                           
+	<link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen" title="styles" charset="utf-8">
+	
+  <link rel="stylesheet" href="/stylesheets/lytebox.css" type="text/css" media="screen" title="styles" charset="utf-8"> 
+
+
+	
+   
+    <% if @title == 'Home' %>
+	  <style type="text/css" media="screen">
+	  	#page-wrap {
+			background: url('../images/home_page1.jpg') repeat; 	
+		}
+	  </style>
+	<% end %>
+</head>
+
+<body id="<%= @title.downcase %>">
+	<a name="top"></a>
+
+	
+	
+				
+	<div id="page-wrap">
+		<div id="inside">			
+			<div id="header">
+				<h2>PRINTMAKER/DESIGNER</h2>	
+
+				<div id="navcontainer">
+				<ul id="navlist" class="mainmenu">
+					<li id="nav-home"><%= link_to "HOME", :action => 'index', :controller => 'site' %></li>
+					<li id="nav-statement"><%= link_to "STATEMENTS", :action => 'statement', :controller => 'site' %></li>
+					<li id="nav-prints"><%= link_to "PRINTS", :action => '1', :controller => 'prints' %></li>
+					<li id="nav-books"><a href="#">Book +</a> 
+						 <ul>                
+                <li id="nav-books"><%= link_to "MAKING IT", :action => 'books', :controller => 'site' %></li>
+ 								<li id="nav-books"><%= link_to "HOBO", :action => 'hobo', :controller => 'site' %></li> 
+                             
+             </ul> 
+						
+					</li>
+					<li id="nav-resume"><%= link_to "RESUME", :action => 'resume', :controller => 'site' %></li>
+					<li id="nav-contact" class="last"><%= link_to "CONTACT", :action => 'contact', :controller => 'site' %></li>
+				</ul>
+		  </div>			   
+		</div>
+		<div id="main-content">
+		
+ 			<h1 id="logo">Joan O'Connor</h1>
+
+
+			<br />
+				<p class="flash"><%= flash[:notice] %></p>
+            
+				<%= yield  %>
+			</div>
+		</div>
+		
+		<div style="clear: both;"></div>
+	
+
+	</div>
+</body>
+</html>

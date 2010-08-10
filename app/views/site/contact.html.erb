@@ -1,0 +1,28 @@
+<p class="email"> For question or comments, please use the form below or send email to <a href="mailto:ographics@earthlink.net">ographics@earthlink.net</a></p>.
+<div id="contact_form">
+<% form_for :contact, :url => { :action => "send_contact_message"} do |f| %>
+<fieldset>
+	<legend>Your Contact Details</legend>
+
+		<input type="hidden" id="required" value="contact_name,contact_email,contact_message" />
+	<p>
+		<label for="name">Name: </label><br />
+		
+		<%= f.text_field :name, :size => "25" %>
+	</p>
+	<p>
+		<label for="email">Email: </label><br />
+	    <%= f.text_field :email, :size => "25" %>
+	</p>
+	<p>
+		<label for="message">Message: </label><br />
+		<%= f.text_area :message, :cols => "35", :rows => "8" %>
+	</p>
+</fieldset>
+	<div id="button">
+		<%= button_to "submit", :action => 'submit' %>
+	</div>
+<% end %>
+
+
+</div>
