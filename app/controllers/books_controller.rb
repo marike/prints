@@ -8,18 +8,30 @@ class BooksController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @books }
     end
-  end
+  end 
+  
+  def makingit
 
-  # GET /books/1
-  # GET /books/1.xml
-  def show
+    @title = "Books"  
+     
+  end    
+  
+  def hobo 
+    @title = "Books"   
     @book = Book.find(params[:id])
 
+  end
+
+ 
+  def show  
+    @title = "Making It"
+    @book = "makingit"
+  
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @book }
     end
-  end
+  end     
 
   # GET /books/new
   # GET /books/new.xml

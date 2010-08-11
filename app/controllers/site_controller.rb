@@ -13,8 +13,8 @@ class SiteController < ApplicationController
   
   def books
     @title = "Books"
-  end
-  
+  end  
+             
   def resume
     @title = "Resume"
   end

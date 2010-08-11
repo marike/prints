@@ -2,7 +2,14 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :books
 
   map.resources :prints
-  #map.resources :site
+  #map.resources :site    
+  # 
+  # 
+  # map.with_options :controller => 'book' do |book|
+  #   book.makingit    'site/books/makingit',   :action  => 'makngit' 
+  #   book.hobo        'site/books/hobo'        :action  => 'hobo'
+  # 
+  # end       
 
   # The priority is based upon order of creation: first created -> highest priority.
 
