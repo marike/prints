@@ -1,12 +1,24 @@
+<div id="numbering">
+  [<%= @book.id %> of 18]
+
+</div>
+
+<div id="next">
+	<%= link_to_unless(@book.id.eql?(18), "Next", "#{@book.id + 1}") %> 
+<%= link_to_unless(@book.id.eql?(1),  "Prev", "#{@book.id - 1}") %>
+
+
+</div>
 
 <div class="enlarge_book">
 </div>
 
-<div id="book_data">
+<div id="book_data"> 
 	<h3>BOOKS</h3><br />
-	<p><b>Making It In<br />
-	      New York City</b></p>
-	<p>Allworth Press</p>
+	<h3>Hobo</h3><br />
+	<p>Etchings by Joan O'Connor</p><p>Poetry by Audrey McGinn</p>
+	<p>Edition of Eight</p>
+	
 
 </div>
 <div class="book_display">

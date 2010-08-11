@@ -493,10 +493,9 @@ h2 {
 ul.mainmenu {
 /*  margin-left: 8px;           */
 	float:right;
-
   border: 0 none;
   padding: 0;  
-  width:158px;
+  width:173px;
 /*  width: auto; For KHTML*/
   list-style: none;
   height: 27px;
@@ -521,7 +520,7 @@ ul.mainmenu ul {
   margin-left: -1px;
   border: 0 none;
   padding: 0;
-  width:158px; 
+  width:173px; 
   width: auto;
   list-style: none;
   display: none;
@@ -540,7 +539,7 @@ ul.mainmenu ul:after /*From IE 7 lack of compliance*/{
 }
 
 ul.mainmenu ul li {
-  width:158px; 
+  width:173px; 
 
   float: left; /*For IE 7 lack of compliance   */
   display: block !important;
