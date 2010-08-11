@@ -4,13 +4,15 @@
 </div>
 
 <div id="next">
-	<%= link_to_unless(@book.id.eql?(18), "Next", "#{@book.id + 1}") %> 
-<%= link_to_unless(@book.id.eql?(1),  "Prev", "#{@book.id - 1}") %>
+	<%= link_to_unless(@large_book.id.eql?(18), "Next", "#{@large_book.id + 1}") %> 
+<%= link_to_unless(@large_book.id.eql?(1),  "Prev", "#{@large_book.id - 1}") %>
 
 
-</div>
+</div>  
 
-<div class="enlarge_book">
+
+<div class="enlarge_book"> 
+	 <a href="<%= @large_book.path %>" rel="lytebox[books]" title="Hobo Book">Enlarge</a> 
 </div>
 
 <div id="book_data"> 

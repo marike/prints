@@ -237,10 +237,10 @@ h2 {
 }
 
 .enlarge_book a {
-  position:relative;
+  position:absolute;              
   margin-right: 30px;
   margin-left:862px;
-  top: 437px;
+  top:535px;
   background: #CC0200;
   color: #fff;
   font-size: 12px;
@@ -253,8 +253,8 @@ h2 {
 	
 	float:left;
 	padding-left: 20px;
-	margin: 25px 70px 0 200px !important;
-    margin: 25px 70px 0 195px;	
+	margin: 15px 70px 0 200px !important;
+    margin: 15px 70px 0 195px;	
 }
 
 #line {
@@ -293,7 +293,9 @@ h2 {
 	margin-right: 97px;
 	font-size: 12px;
 	font-family: Arial, Verdana, sans-serif;
-	color :#fff;
+	color :#fff;    
+/*	clear:both;*/    
+	clear:left;
 }
 
 #next a {
@@ -304,7 +306,8 @@ h2 {
 	display:block;
 	background: #75747A;
 	padding:3px 6px 3px 6px;
-	border: 2px solid #ccc;
+	border: 2px solid #ccc;    
+		clear:left;   
 }
 
 #next a:hover {

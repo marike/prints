@@ -18,7 +18,8 @@ class BooksController < ApplicationController
   
   def hobo 
     @title = "Books"   
-    @book = Book.find(params[:id])
+    @book = Book.find(params[:id])  
+    @large_book = LargeBook.find(params[:id])
 
   end
 
