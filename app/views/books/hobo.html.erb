@@ -5,7 +5,7 @@
 
 <div id="next">
 	<%= link_to_unless(@large_book.id.eql?(18), "Next", "#{@large_book.id + 1}") %> 
-<%= link_to_unless(@large_book.id.eql?(1),  "Prev", "#{@large_book.id - 1}") %>
+    <%= link_to_unless(@large_book.id.eql?(1),  "Prev", "#{@large_book.id - 1}") %>
 
 
 </div>  

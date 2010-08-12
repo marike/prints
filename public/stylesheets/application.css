@@ -409,18 +409,19 @@ h2 {
 
 
 #navcontainer ul
-{
+{ 
+  margin-left:40px;
   margin-top:0px;
-	background-color: #75747A;
-	color: #fff;
-	float: left;
-  width:100%; 
+  background-color: #75747A;
+  color: #fff;
+  float: left;
+  width:97.3%; 
   font-family: arial, helvetica, sans-serif;
 	letter-spacing: .45em;
 	border-left: 2px solid #ccc;
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;                 
-	
+
 }
 
 #navcontainer ul li { display: inline; }
@@ -428,18 +429,20 @@ h2 {
 
 #navcontainer ul li a
 {
-	padding: 0.2em 4.65em;	
+	padding: 0.2em 4.20em 0.2em 4.10em;	
 	background-color: #75747A;
 	color: white;
+/*	width:inherit;*/
 	text-decoration: none;
 	float: left;
-	border-right: 1px solid #fff;
+	border-right: 1px solid #BBB;
 }
 
 
 #navcontainer ul li.last a {
 	
-	padding: 0.2em 4.65em;	
+	padding: 0.2em 4.20em 0.2em 4.10em;
+		
 	background-color: #75747A;
 	color: white;
 	text-decoration: none;
@@ -450,17 +453,17 @@ h2 {
 
 #navlist ul li a
 {
-	padding: 0.2em 1em;     
-	background-color: #CCC;
+	padding: 0.2em 1em;   
+	background-color: #999;
 	color: white;
 	text-decoration: none;
 	float: left;
-	border-right: 1px solid #fff;
 }
 
 
 #navcontainer ul li a:hover
 {
+
   background: #CC0200;
   color: #fff;
 }
@@ -494,46 +497,51 @@ h2 {
 
 }
 ul.mainmenu {
-/*  margin-left: 8px;           */
+/*  margin-left: 0px;     */      
 	float:right;
   border: 0 none;
-  padding: 0;  
-  width:173px;
+
 /*  width: auto; For KHTML*/
   list-style: none;
-  height: 27px;
+  height: 26px;
 }
 
 ul.mainmenu li {
 
   margin: 0;
   border: 0 none;
-  padding: 0;
+  padding-right: 2px;
+  margin-right:0px;  /* fix for background */
   float: left; /*For Gecko*/
   display: inline;
   list-style: none;
   position: relative;
   height: 27px;
+
 }
 
 /* SUBMENUS */
 
 ul.mainmenu ul {     
 
-  margin-left: -1px;
-  border: 0 none;
+/*  border: 0 none;*/
   padding: 0;
-  width:173px; 
+  font-family: arial, helvetica, sans-serif;
+  font-size:10px;
+  width:190px; 
   width: auto;
   list-style: none;
   display: none;
   position: absolute;
   top: 24px;
-  left: 0;
+  left: -41px;
+  border: 0px;
+
 }
 
 ul.mainmenu ul:after /*From IE 7 lack of compliance*/{
   clear: both;
+
   display: block;
   font: 1px/0px serif;
   content: ".";
@@ -542,53 +550,70 @@ ul.mainmenu ul:after /*From IE 7 lack of compliance*/{
 }
 
 ul.mainmenu ul li {
-  width:173px; 
-
+  width:181px;  /* WIDTH */
+/*  border:1px solid white;*/
   float: left; /*For IE 7 lack of compliance   */
   display: block !important;
   display: inline; /*For IE*/
+  border-left:px solid white;   /* this works */
+ /* border-right:1px solid #000;   THIS SHOWS THE TRUE WIDTH OF BUTTON */
+
+
+
 }
 
 /* Root Menu */
 ul.mainmenu a {
-    
+   
   padding: 0 6px;
   float: none !important; /*For Opera*/
   float: left; /*For IE     */
   display: block;
-  font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+/*  font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;*/
   text-decoration: none;
   height: auto !important;
   height: 1%; /*For IE*/ 
+  
+
 
 }
 
 /* Root Menu Hover Persistence */
 ul.mainmenu a:hover {
-    background: #75747A;   
-
+     border:0 none;
+    display:block;
+    
+    
 
 }
 
 /* 2nd Menu */
 ul.mainmenu li:hover li a,
 ul.mainmenu li.iehover li a {
+  border:0 none;
   float: none;
-  background: #CC0200; /* was ccc */   
+  background: #CC0200; /* was ccc */ 
+
+
+
+
 
 }
 
 ul.mainmenu ul ul {
+  
   display: none;
   position: absolute;
   top: 0;
-  left: 158px;  
+  left: 135px;  
+
 
 }
 
 /* Do Not Move - Must Come Before display:block for Gecko */
 ul.mainmenu li:hover ul ul,
 ul.mainmenu li.iehover ul ul {
+  
   display: none;
     background: #75747A;     
 }
@@ -596,6 +621,7 @@ ul.mainmenu li.iehover ul ul {
 ul.mainmenu li:hover ul,
 ul.mainmenu ul li:hover ul {
   display: block;
+
 }
 
 ul.mainmenu li.iehover ul,
@@ -606,6 +632,7 @@ ul.mainmenu ul li.iehover ul {
 li.persistHover,
 a.persistHover
 {
+
     background: #75747A;   
 	color: #FFF;
 }

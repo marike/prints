@@ -423,7 +423,7 @@ margin: 40px 70px 0 200px !important;
 #navcontainer ul
 {
 padding-left: 0;
-margin-left: 40px;
+margin-left: 0px;
 margin-right:0px;
 padding-right:0px;
 background-color: #75747A;
@@ -467,7 +467,7 @@ border-right: 0px solid #fff;
 {
 padding: 0.2em 1em;
 background-color: #ccc;
-color: White;
+color: white;
 text-decoration: none;
 float: left;
 border-right: 1px solid #fff;
@@ -501,6 +501,9 @@ background: #CC0200;
  color: #fff;
  background: #CC0200;
 }
+
+
+
 
 
 
