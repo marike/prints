@@ -1,20 +1,4 @@
   
-<% if request.env['HTTP_USER_AGENT'] == 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14' %>
-   <%= stylesheet_link_tag "style", "lytebox" %>
-<% elsif request.env['HTTP_USER_AGENT'][0..84] == "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.14) Gecko/20080404 Firefox" %>
-   <%= stylesheet_link_tag 'style_mac', 'lytebox' %>
-<% else %>
-<!--[if !IE]><!-->
-	<link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen" title="styles" charset="utf-8">
-	<link rel="stylesheet" href="/stylesheets/lytebox.css" type="text/css" media="screen" title="ie_styles" charset="utf-8">
-  <!--<![endif]-->
- <% end %>
-
-<!--[if IE]>
-	    <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" title="ie_styles" charset="utf-8">
-	    <link rel="stylesheet" href="/stylesheets/lytebox.css" type="text/css" media="screen" title="ie_styles" charset="utf-8">
-<![endif]--> 
-
 
 
 script/generate scaffold Book title:string path:string thumbnail:string height:integer width:integer 
@@ -31,3 +15,6 @@ t.integer  "height"
 t.integer  "width"
 t.datetime "created_at"
 t.datetime "updated_at"
+
+
+	 <a href="<%= @large_book.path %>" rel="lytebox[books]" title="Hobo Book">Enlarge</a> 

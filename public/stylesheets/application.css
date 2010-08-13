@@ -408,6 +408,7 @@ h2 {
 }
 
 
+
 #navcontainer ul
 { 
   margin-left:40px;
@@ -416,7 +417,8 @@ h2 {
   color: #fff;
   float: left;
   width:97.3%; 
-  font-family: arial, helvetica, sans-serif;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-size:10px;
 	letter-spacing: .45em;
 	border-left: 2px solid #ccc;
 	border-top: 2px solid #ccc;

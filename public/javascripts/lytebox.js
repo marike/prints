@@ -32,7 +32,7 @@ function LyteBox() {
 		this.outerBorder		= true;		// controls whether to show the outer grey (or theme) border
 		this.resizeSpeed		= 8;		// controls the speed of the image resizing (1=slowest and 10=fastest)
 		this.maxOpacity			= 80;		// higher opacity = darker overlay, lower opacity = lighter overlay
-		this.navType			= 1;		// 1 = "Prev/Next" buttons on top left and left (default), 2 = "<< prev | next >>" links next to image number
+		this.navType			= 0;		// 1 = "Prev/Next" buttons on top left and left (default), 2 = "<< prev | next >>" links next to image number
 		this.autoResize			= true;		// controls whether or not images should be resized if larger than the browser window dimensions
 		this.doAnimations		= true;		// controls whether or not "animate" Lytebox, i.e. resize transition between images, fade in/out effects, etc.
 		
@@ -162,7 +162,7 @@ LyteBox.prototype.initialize = function() {
 		objDetails.appendChild(objNumberDisplay);
 	var objNavDisplay = this.doc.createElement("span");
 		objNavDisplay.setAttribute('id','lbNavDisplay');
-		objNavDisplay.style.display = 'none';
+		objNavDisplay.style.display = 'none'; // changed from none to block
 		objDetails.appendChild(objNavDisplay);
 	var objClose = this.doc.createElement("a");
 		objClose.setAttribute('id','lbClose');
@@ -315,8 +315,8 @@ LyteBox.prototype.changeContent = function(imageNum) {
 	this.doc.getElementById('lbLoading').style.display = '';
 	this.doc.getElementById('lbImage').style.display = 'none';
 	this.doc.getElementById('lbIframe').style.display = 'none';
-	this.doc.getElementById('lbPrev').style.display = 'none';
-	this.doc.getElementById('lbNext').style.display = 'none';
+	this.doc.getElementById('lbPrev').style.display = 'display'; // changed was none
+	this.doc.getElementById('lbNext').style.display = 'display';  // same
 	this.doc.getElementById('lbIframeContainer').style.display = 'none';
 	this.doc.getElementById('lbDetailsContainer').style.display = 'none';
 	this.doc.getElementById('lbNumberDisplay').style.display = 'none';

@@ -5,7 +5,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Printmaking by Joan O'Connor" />
-	<meta name="verify-v1" content="IA3bMvzGJBpPfcZGvHXs6vqXto7Z4QkTeosx7XMlC6I=" />
 	<meta name="keywords" content="printmaking, etchings, art, art students, editioned printing, fine art, 
 	graphic arts, graphic design, book covers, how to, intaglio, gallery, aquatints, monoprint, platemaking, come and see my etchings, 
 	prints gallery, american graphic artist" />
@@ -13,10 +12,21 @@
 
 	<script src="/javascripts/lytebox.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/javascripts/smooth.pack.js" type="text/javascript" charset="utf-8"></script>
-	                                                                                           
-	<link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen" title="styles" charset="utf-8">
 	
-  <link rel="stylesheet" href="/stylesheets/lytebox.css" type="text/css" media="screen" title="styles" charset="utf-8"> 
+	
+
+
+	<!--[if IE]>
+		    <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" title="ie_styles" charset="utf-8">
+		    <link rel="stylesheet" href="/stylesheets/lytebox.css" type="text/css" media="screen" title="ie_styles" charset="utf-8">
+	<![endif]-->
+	
+	<% if (request.env['HTTP_USER_AGENT'].split)[-1] =~ /Firefox/ %>
+	   <%= stylesheet_link_tag "style", "lytebox" %>
+	<% elsif (request.env['HTTP_USER_AGENT'].split)[-1] =~ /Safari/ %>
+      <%= stylesheet_link_tag "application", "lytebox" %>
+    <% end %>
+
 
 
 	
@@ -32,6 +42,9 @@
 
 <body id="<%= @title.downcase %>">
 	<a name="top"></a>
+
+		<%= request.env['HTTP_USER_AGENT'] %>
+
 
 	
 	
