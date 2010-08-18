@@ -203,15 +203,17 @@ h2 {
 
 }
 #book_data p {
-	line-height: 150%;
-	color: #333;
+	line-height: 80%;
+	color: #777;
 	font-size: 13px;
+	/*font-style:italic;*/
 }
 
 #book_data {
-	line-height: 100%;
+
 	color: #333;
 	font-size: 13px;
+	
 }
 
 #book_data #size  {
@@ -221,7 +223,7 @@ h2 {
 	clear:right;
 }
 #book_data h3 {
-  
+  	line-height: 120%; 
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	color: #333;
@@ -249,12 +251,20 @@ h2 {
   border: 2px solid #ccc;
 }
 
-.book_display{
+.book_display1 {
 	
 	float:left;
 	padding-left: 20px;
-	margin: 15px 70px 0 200px !important;
-  margin: 15px 70px 0 195px;	
+	margin: 29px 70px 0 200px !important;
+  margin: 29px 70px 0 195px;	
+}
+
+.book_display2 {
+	
+	float:left;
+	padding-left: 20px;
+	margin: 20px 70px 0 200px !important;
+  margin: 20px 70px 0 195px;	
 }
 
 #line {

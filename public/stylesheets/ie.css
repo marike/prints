@@ -370,19 +370,18 @@ clear:left;
 }
 
 #book_data h3 {
-
-font-family: Arial, sans-serif;
-font-weight: bold;
-color: #333;
-font-size: 16px;
-
+  line-height: 120%; 
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #333;
+	font-size: 16px;
 }
 
 #book_data p {
-line-height: 150%;
-color: #333;
-font-size: 13px;
-padding-bottom: 10px;
+	line-height: 80%;
+	color: #777;
+	font-size: 13px;
+  padding-bottom: 10px;
 }
 
 #book_state {

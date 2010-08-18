@@ -194,6 +194,7 @@ h2 {
     text-align:justify;
 }
 
+
 #book_data {
   float:left;
   position: absolute;
@@ -203,15 +204,17 @@ h2 {
 
 }
 #book_data p {
-	line-height: 150%;
-	color: #333;
+	line-height: 80%;
+	color: #777;
 	font-size: 13px;
+	/*font-style:italic;*/
 }
 
 #book_data {
-	line-height: 100%;
+
 	color: #333;
 	font-size: 13px;
+	
 }
 
 #book_data #size  {
@@ -221,7 +224,7 @@ h2 {
 	clear:right;
 }
 #book_data h3 {
-  
+  	line-height: 120%; 
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	color: #333;
