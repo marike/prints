@@ -1,4 +1,9 @@
   
+August 13, 2010 - TODO:
+_______________________
+
+
+
 
 
 script/generate scaffold Book title:string path:string thumbnail:string height:integer width:integer 
@@ -17,4 +22,4 @@ t.datetime "created_at"
 t.datetime "updated_at"
 
 
-	 <a href="<%= @large_book.path %>" rel="lytebox[books]" title="Hobo Book">Enlarge</a> 
+	 <a href="<%= @large_book.path %>" rel="lytebox[books]" title="Hobo Book">Enlarge</a> 13
